@@ -8,7 +8,7 @@ local MiscSection = Misc:NewSection("Misc")
 
 --Scripts
 
-MainSection:NewButton("Aimbot (Hold right click)", "Legit the name", function(v)
+MainSection:NewButton("Aimbot (Hold right click)", "Legit the name", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/ygp8Enye"))()
 end)
 
