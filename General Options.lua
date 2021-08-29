@@ -150,8 +150,8 @@ end)
     print("Copied!")
 end)
  
-CreditSection:NewButton("https://discord.gg/wmuCnApm6s", "Click to copy", function ()
-    setclipboard("https://discord.gg/wmuCnApm6s")
+CreditSection:NewButton("https://discord.gg/MV8GX94D8W", "Click to copy", function ()
+    setclipboard("https://discord.gg/MV8GX94D8W")
     print("Copied")
    end)
  
