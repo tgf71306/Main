@@ -217,4 +217,4 @@ local sldr = Misc:Slider("WalkSpeed", 16, 200, 0, function(Value)
          Games:Button("Lumber Tycoon")
          Games:Button("Pressure Wash Sim")
          Games:Button("I need suggestions")
-        end)
+
