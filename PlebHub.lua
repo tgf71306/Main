@@ -1,5 +1,5 @@
 local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
-
+ 
 local win = DiscordLib:Window("Pleb Hub Created By: tgf71306#1317")
 local serv = win:Server("Home", "")
 local DB = serv:Channel("DashBoard")
@@ -8,7 +8,7 @@ local Misc = serv:Channel("Misc Options")
 local Player = serv:Channel("Player Options")
 local Credits = serv:Channel("Credits")
 local InfiniteJump = false
-
+ 
 --Everything for DashBoard
 DB:Label("Welcome to PlebHub!!!")
 DB:Seperator()
@@ -19,7 +19,7 @@ game.StarterGui:SetCore("SendNotification", {
   Button1 = "Discord (Click to Copy)";  
   setclipboard("https://discord.gg/wmuCnApm6s");
 })
-DB:Dropdown("Current Scripts",{"General Options","Pet Simulator X","Arsenal","StrongMan Simulator","Mega Noob Simulator", "Coin Hero Simulator"}, function(bool)
+DB:Dropdown("Current Scripts",{"General Options","Pet Simulator X","Arsenal","StrongMan Simulator","Mega Noob Simulator", "Coin Hero Simulator", "Pressure Wash Sim"}, function(bool)
   print(bool)
   end)
   
@@ -38,7 +38,7 @@ DB:Dropdown("Current Scripts",{"General Options","Pet Simulator X","Arsenal","St
   end)
     
     Scripts:Seperator()
-
+ 
   Scripts:Button("Pet Simulator X", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/95HthyJq"))()
     game.StarterGui:SetCore("SendNotification", {
@@ -52,7 +52,7 @@ DB:Dropdown("Current Scripts",{"General Options","Pet Simulator X","Arsenal","St
   end)
     
     Scripts:Seperator()
-
+ 
   Scripts:Button("Arsenal", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/tgf71306/Main/main/Arsenal.lua"))()
     game.StarterGui:SetCore("SendNotification", {
@@ -66,7 +66,7 @@ DB:Dropdown("Current Scripts",{"General Options","Pet Simulator X","Arsenal","St
   end)
     
     Scripts:Seperator()
-
+ 
   Scripts:Button("StrongMan Simulator", function()
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/naypramx/STRONGMANSIM/main/NAYPRAMX'), true))()
     game.StarterGui:SetCore("SendNotification", {
@@ -79,7 +79,7 @@ DB:Dropdown("Current Scripts",{"General Options","Pet Simulator X","Arsenal","St
   end)
     
     Scripts:Seperator()
-
+ 
   Scripts:Button("Mega Noob Simulator", function()
     loadstring(game:HttpGet("https://pastebin.com/NbDiNfq4"))()
     game.StarterGui:SetCore("SendNotification", {
@@ -92,7 +92,7 @@ DB:Dropdown("Current Scripts",{"General Options","Pet Simulator X","Arsenal","St
   end)
     
     Scripts:Seperator()
-
+ 
     Scripts:Button("Coin Hero Simulator", function()
       script=loadstring(game:HttpGet(('ei9rQPRe/war/moc.nibetsap//:sptth'):reverse(), true))()
     game.StarterGui:SetCore("SendNotification", {
@@ -103,23 +103,35 @@ DB:Dropdown("Current Scripts",{"General Options","Pet Simulator X","Arsenal","St
     })
   game.CoreGui.Discord:destroy()
   end)
-
-
+  
+  Scripts:Seperator()
+  
+  Scripts:Button("Pressure Wash Sim", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/GabSa4Yn"))()
+    game.StarterGui:SetCore("SendNotification", {
+      Title = "Pressure Wash Sim Loaded"; 
+      Text = "Created By: tgf71306#1317"; 
+      Button1 = "Discord (Click To Copy!)";  
+      setclipboard("https://discord.gg/wmuCnApm6s");
+  })
+  game.CoreGui.Discord:destroy()
+  end)
+ 
   
   --Misc Options
   Misc:Label("Misc Options")
   Misc:Seperator()
-
+ 
   Misc:Button("Rejoin The Game", function()
     DiscordLib:Notification("Notification", "Rejoining Game In 3 Seconds", "Okay!")
     wait(3.0)
     local ts = game:GetService("TeleportService")
-
+ 
     local p = game:GetService("Players").LocalPlayer
-
+ 
     ts:Teleport(game.PlaceId, p)
 end)
-
+ 
   Misc:Seperator()
   
   Misc:Button("RTX Graphics", function()
@@ -127,15 +139,15 @@ end)
     DiscordLib:Notification("Notification", "Rtx Graphics Loaded", "Okay!")
   end)
   
-
+ 
   Misc:Seperator()
-
+ 
   Misc:Button("Fly Press E To Use (Click This To Enable)", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/YVQXCvnP"))()
 end)
   
   Misc:Seperator()
-
+ 
 local sldr = Misc:Slider("WalkSpeed", 16, 200, 0, function(Value)
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
     print(Value)
@@ -159,7 +171,7 @@ local sldr = Misc:Slider("WalkSpeed", 16, 200, 0, function(Value)
          --Player Options
          Player:Label("Player Options")
          Player:Seperator()
-
+ 
          Player:Button("Infinite Jump", function()
           InfiniteJumpEnabled = true
             game:GetService("UserInputService").JumpRequest:connect(function()
@@ -191,11 +203,11 @@ local sldr = Misc:Slider("WalkSpeed", 16, 200, 0, function(Value)
          DiscordLib:Notification("Notification", "Copied Discord Link: https://discord.gg/wmuCnApm6s", "Okay!")
          setclipboard("https://discord.gg/wmuCnApm6s")
          end)
-
-
-
-
-
+ 
+ 
+ 
+ 
+ 
         --Page 2 Code
         local serv = win:Server("Future", "http://www.roblox.com/asset/?id=6031075938") 
          local Plans = serv:Channel("Plans")
@@ -215,6 +227,7 @@ local sldr = Misc:Slider("WalkSpeed", 16, 200, 0, function(Value)
          Games:Seperator()
          
          Games:Button("Lumber Tycoon")
-         Games:Button("Pressure Wash Sim")
+         Games:Button("Pressure Wash Sim (Added)")
          Games:Button("I need suggestions")
-
+ 
+ 
