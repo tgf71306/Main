@@ -1,6 +1,6 @@
 --Yep
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Arsenal  Created by tgf71306#1317", "Midnight")
+local Window = Library.CreateLib("Arsenal  Created by tgf71306", "Midnight")
 local Main = Window:NewTab("Main")
 local MainSection = Main:NewSection("Main")
 local Misc = Window:NewTab("Misc")
