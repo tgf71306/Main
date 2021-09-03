@@ -1,7 +1,7 @@
 --General Options UPDATED
 local ezlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/debug420/Ez-Hub/dev/Modules/EzLib.lua", true))()
 
-local mainGUI = ezlib.create("General Options Reworked");
+local mainGUI = ezlib.create("General Options Rework");
 local main = mainGUI.newTab("Main Options");
 local misc = mainGUI.newTab("Misc");
 local credit = mainGUI.newTab("Credits");
@@ -96,6 +96,15 @@ game.CoreGui.EzExc:destroy()
 print("Destroyed");
 end)
     
+local AntiAfk = false
+misc.newCheckbox("AntiAfk", false, function(state)
+if AntiAfk == true then
+            local bb=game:service'VirtualUser'
+            bb:CaptureController()
+            bb:ClickButton2(Vector2.new())
+        end
+    end)
+
 misc.newCheckbox("Bounding Boxes", false, function(BillTheBoolean)
     settings():GetService("RenderSettings").ShowBoundingBoxes = BillTheBoolean
     end)
