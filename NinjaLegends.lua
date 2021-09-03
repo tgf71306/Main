@@ -1,6 +1,6 @@
 --Main
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Ninja Legends Created by tgf71306#1317", "GrapeTheme")
+local Window = Library.CreateLib("Ninja Legends Created by tgf71306", "GrapeTheme")
 local ninja = Window:NewTab("Ninja Legends")
 local ns = ninja:NewSection("Ninja Legends")
 
