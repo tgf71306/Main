@@ -1,7 +1,7 @@
 --General Options UPDATED
 local ezlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/debug420/Ez-Hub/dev/Modules/EzLib.lua", true))()
 
-local mainGUI = ezlib.create("General Options Rework");
+local mainGUI = ezlib.create("General Options Reworked");
 local main = mainGUI.newTab("Main Options");
 local misc = mainGUI.newTab("Misc");
 local credit = mainGUI.newTab("Credits");
